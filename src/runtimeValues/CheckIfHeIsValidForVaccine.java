@@ -19,7 +19,7 @@ public class CheckIfHeIsValidForVaccine {
         } else {
             System.out.println("invalid");
         }*/
-        if ((myAge > 0 && myAge < 18) || (myAge > 64 && myAge < 101)) {
+        if ((myAge >= 1 && myAge <= 17) || (myAge >= 64 && myAge <= 100)) {
             System.out.println("valid");
         } else {
             System.out.println("invalid");
