@@ -16,6 +16,9 @@ public class Forloop {
         }
         System.out.println(factorialValue);
         //5=5*4*3*2*1
+        for(;;) {
+
+        }
 
     }
 
