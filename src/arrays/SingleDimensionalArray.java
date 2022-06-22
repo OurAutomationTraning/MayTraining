@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
-public class IntegerArray {
+public class SingleDimensionalArray {
     public static void main(String[] args) {
         int i = 10;
         String s = "ABC";
@@ -12,6 +12,14 @@ public class IntegerArray {
         String[] strArr = new String[]{"abc", "bca", "cba"};
         char[] carr = new char[]{'+', 'c'};
         boolean[] boolArr = new boolean[]{true, false, false, false};
+        int[] squareArr = new int[10];
+        for (int j = 5; j < 15; j++) {
+            squareArr[j-5] = j*j;
+        }
+        Arrays.stream(squareArr).forEach(e->{
+            System.out.println(e);
+        });
+
         /*System.out.println(arr[3]);
         System.out.println(arr.length);*/
         /*for (int j = 0; j < arr.length; j++) {
