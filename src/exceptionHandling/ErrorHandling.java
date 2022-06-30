@@ -15,7 +15,7 @@ public class ErrorHandling {
         recursion(10);
         int a = 10;
         int b = 12;
-        Assert.assertEquals(a, b);
+//        Assert.assertEquals(a, b);
         FileInputStream fis = new FileInputStream("");
         System.out.println("completed");
         throw new SravanException();

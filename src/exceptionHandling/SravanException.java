@@ -1,4 +1,4 @@
 package exceptionHandling;
 
-public class SravanException extends Throwable {
+public class SravanException extends Exception {
 }
