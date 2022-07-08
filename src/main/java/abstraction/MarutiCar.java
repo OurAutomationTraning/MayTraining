@@ -1,6 +1,6 @@
 package abstraction;
 
-public class MarutiCar implements ICar,IEngine {
+public class MarutiCar implements ICar, IEngine {
     @Override
     public void tyres() {
         System.out.println("tyres are from maruti");
