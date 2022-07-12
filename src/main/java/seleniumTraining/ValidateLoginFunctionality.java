@@ -20,10 +20,18 @@ public class ValidateLoginFunctionality {
 
         System.out.println("Browser opened");
         driver.get("http://automationpractice.com/index.php");//open any website
-        driver.findElement(By.className("login")).click();
+        try {
+            driver.findElement(By.className("login")).click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         driver.findElement(By.id("email")).sendKeys("kongara.bharghav@gmail.com");
         driver.findElement(By.name("passwd")).sendKeys("Testing@1234");
-        driver.findElement(By.id("SubmitLogin")).click();
+        try {
+            driver.findElement(By.id("SubmitLogin")).click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
         //driver.close();// it will close only the tab
